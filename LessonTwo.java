@@ -27,10 +27,15 @@ public class LessonTwo {
         // Create a JPanel to hold buttons
         JPanel panel = new JPanel();
         frame.getContentPane().add(panel);
+        // Arranges elements in right to left order and goes to next line
+        // if no space
         panel.setLayout(new FlowLayout());
         
         // Add Button to open a popup
         JButton popupButton = new JButton("Open Popup");
+        // new ActionListener is something called an anonymous class, which
+        // implements and interface
+        // actionPerformed overrides the method in this interface
         popupButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
